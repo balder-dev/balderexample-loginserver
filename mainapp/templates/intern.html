@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+    {% block title %}<title>Internal</title>{% endblock %}
+
+{% block content %}
+<h1>Welcome</h1>
+
+<p>Welcome in the internal area. You are logged in.</p>
+
+
+<p>You have visited this page {{ num_visits }} time{{ num_visits|pluralize }}.</p>
+
+{% endblock %}

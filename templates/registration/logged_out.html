@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="row justify-content-center m-3">
+
+    <div class="col-md-6 col-xl-4">
+        <div>
+            <h1 class="h3 mb-3 fw-normal">You are logged out</h1>
+
+            <div class="checkbox mt-3 mb-3">
+                <a href="{% url 'login'%}" class="w-100 btn btn-lg btn-secondary">Go to Login</a>
+
+            </div>
+            <input type="hidden" name="next" value="{{ next }}"/>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
